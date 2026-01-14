@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { DataTable } from "primereact/datatable";
-import type { DataTablePageEvent } from "primereact/datatable";
+import type { DataTablePageEvent,DataTableSelectionChangeEvent, } from "primereact/datatable";
 import { Column } from "primereact/column";
 
 import type { Artwork } from "../types/artwork";
@@ -37,7 +37,7 @@ export function ArtworkTable() {
 
   const selectedArtworks = artworks.filter((a) => selectedRowIds.has(a.id));
 
-  const onSelectionChange = (e: { value: Artwork[] }) => {
+  const onSelectionChange = (e: DataTableSelectionChangeEvent<Artwork[]>) => {
     const updated = new Set(selectedRowIds);
 
     e.value.forEach((art) => updated.add(art.id));
