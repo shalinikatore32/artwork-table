@@ -1,0 +1,64 @@
+.custom-select-container {
+  margin-bottom: 0.75rem;
+}
+
+/* Trigger button */
+.custom-select-btn {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.custom-select-btn:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+}
+
+/* Overlay panel */
+.custom-select-overlay {
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Content layout */
+.custom-select-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+/* Label */
+.custom-select-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Input wrapper */
+.custom-select-input {
+  width: 100%;
+}
+
+/* Ensure input stretches fully */
+.custom-select-input input {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+/* Helper text */
+.custom-select-hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.3;
+}
+
+/* Apply button */
+.custom-select-apply-btn {
+  margin-top: 0.25rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.85rem;
+}

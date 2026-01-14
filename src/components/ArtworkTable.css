@@ -1,0 +1,167 @@
+.artwork-table-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.artwork-table .p-datatable {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.artwork-table .p-datatable-thead > tr > th {
+  background-color: #f8fafc;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.artwork-table .p-datatable-tbody > tr {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.artwork-table .p-datatable-tbody > tr:hover {
+  background-color: #f9fafb;
+}
+.artwork-table .p-datatable-tbody > tr > td {
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+.artwork-table .p-selection-column {
+  text-align: center;
+}
+
+/* Title column emphasis */
+.artwork-table .p-datatable-tbody td:first-of-type + td {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Pagination */
+.artwork-table .p-paginator {
+  border: none;
+  padding-top: 1rem;
+}
+
+.artwork-table .p-paginator .p-paginator-pages .p-paginator-page {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.artwork-table .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff;
+}
+
+/* Overlay button */
+.custom-select-btn {
+  margin-bottom: 0.75rem;
+}
+
+/* Overlay panel */
+.p-overlaypanel {
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.p-overlaypanel .p-button {
+  width: 100%;
+}
+
+/* Pagination container */
+.artwork-table .p-paginator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+/* Left text: "Showing X to Y of Z entries" */
+.artwork-table .p-paginator-current {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Page buttons container */
+.artwork-table .p-paginator-pages {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Page buttons */
+.artwork-table .p-paginator-page {
+  min-width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+/* Hover */
+.artwork-table .p-paginator-page:hover {
+  background-color: #f3f4f6;
+}
+
+/* Active page */
+.artwork-table .p-paginator-page.p-highlight {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* Previous / Next buttons */
+.artwork-table .p-paginator-prev,
+.artwork-table .p-paginator-next {
+  min-width: 4.5rem;
+  height: 2.25rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Disabled prev/next */
+.artwork-table .p-paginator-prev.p-disabled,
+.artwork-table .p-paginator-next.p-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Style for N/A values */
+.artwork-table td:contains("N/A") {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.table-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.selected-count {
+  font-size: 0.85rem;
+  color: #374151;
+  background-color: #f3f4f6;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
